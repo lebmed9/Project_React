@@ -1,0 +1,23 @@
+@import '../../../assets/style/vars.scss';
+.header {
+  grid-area: header;
+  background-color: $sub-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  & > ul {
+    width: 400px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.active_link {
+  color: green;
+}
+.not_active_link {
+  color: red;
+}
