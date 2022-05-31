@@ -1,40 +1,39 @@
 import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import ButtonHeader from '../Button/Header';
+import Input from '../Form/Header/Input';
 import style from './Header.module.scss';
 
 const Header = () => (
   <header className={style.header}>
-    <h1>Header</h1>
-    <ul>
-      <li>
-        <NavLink
-          className={({ isActive }) => (isActive ? style.active_link : style.not_active_link)}
-          to="/">
-          MAIN
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          className={({ isActive }) => (isActive ? style.active_link : style.not_active_link)}
-          to="/users">
-          USERS
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          className={({ isActive }) => (isActive ? style.active_link : style.not_active_link)}
-          to="/auth">
-          AUTH
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          className={({ isActive }) => (isActive ? style.active_link : style.not_active_link)}
-          to="/reg">
-          REG
-        </NavLink>
-      </li>
-    </ul>
+    <img src="/image/logo.png" alt="logo" />
+    <Input />
+    <ButtonHeader />
+    <div className={style.login}>
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.4">
+          <path
+            d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+            stroke="#2A2F37"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+            stroke="#2A2F37"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </g>
+      </svg>
+      <div>Войти</div>
+    </div>
   </header>
 );
 

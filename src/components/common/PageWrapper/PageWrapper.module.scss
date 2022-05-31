@@ -3,12 +3,14 @@
 .page_wrapper {
   width: 100vw;
   height: 100vh;
-  display: grid;
-  grid-template-areas:
-    'header'
-    'content'
-    'footer';
-  grid-template-rows: 80px auto 60px;
+  // display: grid;
+  // grid-template-areas:
+  //   'header'
+  //   'content'
+  //   'footer';
+  // // grid-template-rows: 72px auto 72px;
+  // grid-template-rows: 72px 300px 72px;
+
 }
 
 .content {

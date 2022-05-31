@@ -1,9 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import MainPage from '../../components/pages/MainPage';
 
-const MainContainer = () => {
-  useEffect(() => console.log('MAIN_CONTAINER - MOUNT'), []);
-  return <MainPage />;
-};
+const MainContainer = () => <MainPage />;
 
 export default MainContainer;

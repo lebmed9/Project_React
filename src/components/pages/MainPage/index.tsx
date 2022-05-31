@@ -1,33 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
-import { data } from '../../../helpers';
-import UserList from './UserList';
-import Button from '../../common/Button';
+import React from 'react';
+import Footer from '../../common/Footer';
+import Header from '../../common/Header';
+import PageWrapper from '../../common/PageWrapper';
 
-const MainPage = () => {
-  useEffect(() => console.log('MAIN_PAGE - MOUNT'), []);
+const MainPage = () => (
+  <PageWrapper>
+    <h1>Main Page</h1>
+  </PageWrapper>
+);
 
-  // const { state } = useLocation() as { state: { isOpen: boolean } };
-  const location: any = useLocation();
-
-  const [listVisible, setListVisible] = useState(false);
-  const handler = () => {
-    setListVisible((prev) => !prev);
-  };
-
-  useEffect(() => {
-    if (location?.state?.isOpen) {
-      setListVisible(true);
-    }
-  }, [location?.state?.isOpen]);
-
-  return (
-    <>
-      <h1>User List</h1>
-      {listVisible ? <UserList data={data} /> : <h2>Список скрыт</h2>}
-      {/* {listVisible && <UserList data={data} />} */}
-      <Button title={listVisible ? 'Скрыть список' : 'Показать список'} onClick={handler} />
-    </>
-  );
-};
 export default MainPage;
