@@ -1,0 +1,31 @@
+@import '../../../../assets/style/vars.scss';
+
+
+.banner {
+    display: flex;
+    // max-width: 50%;
+    & > img {
+        width: 73%;
+        margin-top: -80px;
+    }
+}
+
+.text {
+    font-size: 24px;
+    min-width: 38%;
+    line-height: 56px;
+    margin-top: 168px;
+    margin-bottom: 168px;
+
+
+    & > p {
+        font-size: 16px;
+        line-height: 24px;
+        color: $text-color-grey;
+        width: 76%;
+    }
+
+    & > h1 {
+        margin-bottom: 40px;
+    }
+}

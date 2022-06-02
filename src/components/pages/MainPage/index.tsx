@@ -1,11 +1,10 @@
 import React from 'react';
-import Footer from '../../common/Footer';
-import Header from '../../common/Header';
 import PageWrapper from '../../common/PageWrapper';
+import Banner from './Banner';
 
 const MainPage = () => (
   <PageWrapper>
-    <h1>Main Page</h1>
+    <Banner />
   </PageWrapper>
 );
 
