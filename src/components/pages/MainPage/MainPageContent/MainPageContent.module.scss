@@ -1,0 +1,28 @@
+@import '../../../../assets/style/vars.scss';
+
+.container {
+    background-color: $background;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.cards {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+

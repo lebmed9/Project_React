@@ -1,0 +1,56 @@
+@import '/src/assets/style/vars.scss';
+
+.cards_item {
+    max-width: 363px;
+
+    & > img {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+}
+
+.text {
+    background-color: #fff;
+    padding: 24px;
+
+    & > h1 {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+   
+    & > p {
+        font-size: 14px;
+        line-height: 14px;
+        margin-bottom: 40px;
+        max-width: 80%;
+    }
+}
+
+.price {
+    font-size: 18px;
+    line-height: 24;
+    font-weight: 700;
+    text-align: right;
+    min-width: 100%;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    color: #1d1d1d80;
+
+    & > div {
+        display: flex;
+        justify-content: space-between;
+
+        & > p {
+            padding-top: 3px;
+            margin-left: 8px;
+            
+        }
+    }
+}
+

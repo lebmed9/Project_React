@@ -1,0 +1,17 @@
+@import '../../../../../assets/style/vars.scss';
+
+.button {
+    margin-top: 40px;
+    width: 242px;
+    height: 48px;
+    background-color: none;
+    border: 2px;
+    border-radius: 4px;
+    border-color: $active-color-blue;
+    color: $active-color-blue;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
