@@ -1,0 +1,19 @@
+@import '../../../../../assets/style/vars.scss';
+
+
+.preview {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  max-width: 772px;
+  margin-bottom: 32px;
+
+    & > img {
+        width: 162px;
+        height: 96px;
+    }
+}
+
+.clicked {
+    border: 3px solid $header-button-color;
+}

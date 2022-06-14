@@ -1,0 +1,101 @@
+@import '../../../assets/style/vars.scss';
+
+.content {
+    margin: 0 auto;
+    max-width: 1200px;
+    color: $text-color-grey;
+}
+
+.df {
+    display: flex;
+}
+
+.text {
+    max-width: 772px;
+
+    & > p {
+        margin-top: 24px;
+    }
+
+    & > h1 {
+        color: black;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    
+}
+
+.count {
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    color: #1d1d1d80;
+
+    & > p {
+        padding-top: 3px;
+        padding-left: 6px;
+    }
+}
+
+.sidebar {
+    margin-left: 102px;
+
+    & > h1 {
+        margin-bottom: 24px;
+        font-size: 24px;
+        line-height: 32px;
+        color: black;
+    }
+
+    & > button {
+        display: block;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        background-color: $active-color-blue;
+        color: white;
+        border-radius: 4px;
+        font-size: 14px;
+        line-height: 24px;
+        width: 135px;
+        height: 40px;
+        margin-bottom: 72px;
+      }
+
+    & > p {
+        font-size: 18px;
+        line-height: 24px;
+        color: black;
+
+    }  
+}
+
+.description {
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 32px;
+
+    & > h4 {
+        color: black;
+        margin-bottom: 24px;
+    }
+}
+
+.map {
+    margin-bottom: 40px;
+}
+
+.text_map {
+    display: flex;
+
+    & > h4 {
+        color: black;
+        margin-bottom: 24px;
+        margin-right: 10px;
+    }
+}
+
+
