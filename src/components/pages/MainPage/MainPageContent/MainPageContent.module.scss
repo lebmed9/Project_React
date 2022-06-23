@@ -1,14 +1,5 @@
 @import '../../../../assets/style/vars.scss';
 
-.container {
-    background-color: $background;
-}
-
-.content {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .nav {
     padding-top: 40px;
     padding-bottom: 80px;
@@ -26,3 +17,53 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+@media only screen and (max-device-width: 1200px){
+    .nav {
+        display: none;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding: 14px;
+        padding-right: 24px;
+        position: absolute;
+        top: 72px;
+        right: 0;
+        background-color: $background;
+        font-size: 24px;
+    }
+
+
+    .nav_list {
+        display: block;
+        list-style: none;
+
+        & > li {
+            padding-bottom: 6px;
+        }
+    }
+
+    .cards {
+        justify-items: center;
+        gap: 24px;
+        // grid-template-columns: 1px;
+        column-gap: 0;
+
+        grid-template-columns: 1fr 1fr;
+        // width: 100%;
+    }
+}
+
+@media only screen and (max-device-width: 768px){
+    .nav {
+        display: none;
+        padding: 14px;
+        padding-left: 24px;
+        position: absolute;
+        left: 0;
+        right: auto;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+}

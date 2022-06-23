@@ -30,6 +30,8 @@
   height: 72px;
   max-width: 1200px;
   margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .login {
@@ -40,3 +42,86 @@
   font-size: 14px;
   color: black;
 }
+
+.burgerBtn {
+  width: 18px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.burgerBtn::before{
+  content: '';
+  position: absolute;
+  top: 9px;
+  width: 18px;
+  height: 2px;
+  background-color: #2a2f3771;
+}
+
+.burgerBtn span {
+  position: absolute;
+  top: 14px;
+  width: 18px;
+  height: 2px;
+  background-color: #2a2f3771;
+}
+
+.burgerBtn::after {
+  content: '';
+  position: absolute;
+  bottom: 9px;
+  width: 18px;
+  height: 2px;
+  background-color: #2a2f3771;
+}
+
+.lock {
+  display: none;
+}
+
+.burgerBtn {
+  display: none;
+}
+
+.search {
+  display: none;
+}
+
+
+@media only screen and (max-device-width: 1200px){
+  .login {
+    display: none;
+  }
+  .burgerBtn{
+    display: block;
+  }
+  .lock {
+    display: block;
+  }
+  .header {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+  }
+
+  @media only screen and (max-device-width: 768px){
+    .search {
+      display: block;
+    }
+
+    .burgerBtn {
+      
+      position: absolute;
+      left: 24px;
+      cursor: pointer;
+    }
+    
+    .header {
+      padding: 24px;
+
+      & > img {
+        margin-left: 93px;
+      }
+    }
+  }

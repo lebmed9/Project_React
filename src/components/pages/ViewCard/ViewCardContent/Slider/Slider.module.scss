@@ -9,7 +9,7 @@
   margin-bottom: 32px;
 
     & > img {
-        width: 162px;
+        max-width: 162px;
         height: 96px;
     }
 }
@@ -17,3 +17,44 @@
 .clicked {
     border: 3px solid $header-button-color;
 }
+
+
+@media only screen and (max-device-width: 1200px){
+  .preview {
+    padding-top: 24px;
+    max-width: 772px;
+    margin-bottom: 32px;
+    max-width: 100%;
+    height: auto;
+
+
+    margin-bottom: 32px;
+  
+      & > img {
+          width: 23%;
+          height: auto;
+          // height: 96px;
+      }
+  }
+    .slider img {
+      // max-width: 718px;
+      max-width: 100%;
+      // height: auto;
+
+    }
+  } 
+
+
+  @media only screen and (max-device-width: 768px){
+    .preview {
+      padding-top: 8px;
+    
+        & > img {
+            width: 23%;
+            height: auto;
+        }
+    }
+      .slider img {
+        max-width: 100%;
+      }
+    } 

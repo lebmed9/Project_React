@@ -15,4 +15,11 @@
   cursor: pointer;
 }
 
+@media only screen and (max-device-width: 1200px){
+  .button {width: 170px}
+  }
+
+  @media only screen and (max-device-width: 768px){
+    .button {display: none;}
+    }
 

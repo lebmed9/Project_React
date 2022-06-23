@@ -1,0 +1,49 @@
+@import '../../../assets/style/vars.scss';
+
+.content {
+    display: flex;
+    justify-content: space-between;
+
+    & > img {
+        max-height: 412px;
+        margin-top: 36px;
+    }
+}
+
+
+
+.text {
+    margin-top: 174px;
+
+    & > h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    & > p {
+        margin-top: 32px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+
+@media only screen and (max-device-width: 768px){
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    
+        & > img {
+            max-width: 80%;
+            margin: 0 auto; 
+        }
+    }
+
+    .text {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+

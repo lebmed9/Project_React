@@ -2,14 +2,21 @@
 
 .page_wrapper {
   width: 100vw;
-  height: 100vh;
-  // display: grid;
-  // grid-template-areas:
-  //   'header'
-  //   'content'
-  //   'footer';
-  // // grid-template-rows: 72px auto 72px;
-  // grid-template-rows: 72px 300px 72px;
-
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
+
+.conteiner {
+  background-color: $background;
+
+  & > main {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+
 

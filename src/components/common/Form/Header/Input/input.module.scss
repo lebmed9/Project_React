@@ -5,7 +5,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 47%;
+  width: calc(100% - (1200px - 615px));
+  margin-right: 28px;
   height: 36px;
   border: 1px solid $active-color-blue;
   border-radius: 4px;
@@ -15,7 +16,7 @@
 
 .header_input {
   display: block;
-  width: 74%;
+  // width: 74%;
   border: none;
   outline: none;
   overflow: hidden;
@@ -43,3 +44,11 @@
   display: block;
   margin-left: 8px;
 }
+
+@media only screen and (max-device-width: 1200px){
+  .form {width: calc(100% - (768px - 286px))}
+  }
+
+    @media only screen and (max-device-width: 768px){
+      .form {display: none;}
+      }

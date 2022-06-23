@@ -1,17 +1,21 @@
 @import '../../../assets/style/vars.scss';
 
 .content {
-    margin: 0 auto;
-    max-width: 1200px;
     color: $text-color-grey;
+    padding-top: 32px;
 }
 
-.df {
+.df_text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.df_sidebar {
     display: flex;
 }
 
 .text {
-    max-width: 772px;
+    // max-width: 772px;
 
     & > p {
         margin-top: 24px;
@@ -24,8 +28,6 @@
         font-size: 24px;
         line-height: 32px;
     }
-
-    
 }
 
 .count {
@@ -40,8 +42,10 @@
     }
 }
 
-.sidebar {
-    margin-left: 102px;
+.price {
+    margin-top: 56px;
+    margin-right: 180px;
+    // margin-left: calc(100% - (1200px - 580px));
 
     & > h1 {
         margin-bottom: 24px;
@@ -62,15 +66,38 @@
         line-height: 24px;
         width: 135px;
         height: 40px;
-        margin-bottom: 72px;
+        margin-bottom: 47px;
       }
 
     & > p {
         font-size: 18px;
         line-height: 24px;
         color: black;
-
     }  
+}
+
+.price_mobile {
+    display: none;
+}
+
+.sidebar {
+    // margin-left: calc(100% - (1200px - 120px));
+    margin-top: -43px;
+    margin-left: 102px;
+
+    & > img {
+        max-width: 303px;
+        height: 190px;
+        margin-bottom: 100px;
+    }
+
+    & > p {
+        margin-bottom: 24px;
+    }
+}
+
+.sidebar_mobile {
+    display: none;
 }
 
 .description {
@@ -97,5 +124,163 @@
         margin-right: 10px;
     }
 }
+
+@media only screen and (max-device-width: 1200px){
+
+    .content {
+        justify-content: center;
+        max-width: 766px;
+        margin:0 auto;
+        // margin-left: 14px;
+        // margin-right: 14px;
+    }
+
+    .price {
+        margin-right: 0;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .df_sidebar {
+        display: block;
+        margin-top: 0;
+    }
+
+    .sidebar_mobile {
+        display: block;
+        margin: 0;
+        margin-bottom: 100px;
+        padding-left: 0;
+        
+        & > p {
+            margin-bottom: 24px;
+        }
+    }
+
+    .df_sidebar_mobile {
+        display: flex;
+        justify-content: space-between;
+
+        & > img {
+            padding-right: 24px;
+            max-width: 33%;
+        }
+
+        & > img:last-child {
+            padding-right: 0;
+        }
+    }
+
+    .map img {
+        max-width: 100%;
+    }
+
+}
+
+@media only screen and (max-device-width: 768px){
+    .text {
+    
+        & > p {
+            display: none;
+        }
+    
+        & > h1 {
+            margin-bottom: 8px;
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+
+    .price {
+        display: none;
+    }
+
+    .price_mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+
+        & > button {
+            display: block;
+            outline: none;
+            cursor: pointer;
+            border: none;
+            background-color: $active-color-blue;
+            color: white;
+            border-radius: 4px;
+            font-size: 14px;
+            line-height: 24px;
+            width: 135px;
+            height: 40px;
+            margin-bottom: 47px;
+        }
+
+        & > p {
+            font-size: 18px;
+            line-height: 24px;
+            color: black;
+
+        }  
+    }
+
+    .price_mobile h1 {
+        margin-bottom: 24px;
+        font-size: 24px;
+        line-height: 32px;
+        color: black;
+    }
+
+    .df_sidebar_mobile {
+        // display: block;
+        flex-direction: column;
+        align-items: center;
+
+        & > img {
+            padding-right: 10px;
+            padding-bottom: 72px;
+            max-width: 100%;
+        }
+
+        & > img:last-child {
+            padding-bottom: 0;
+        }
+    }
+} 
+
+
+
+
+
+// @media only screen and (max-device-width: 785px){
+
+//     .price {
+//         margin-left: 180px;
+//     }
+
+//     .sidebar {
+//         display: none;
+//     }
+
+//     .content {
+//         // align-items: center;
+//         // margin: auto;
+//     }
+
+//     .df {
+//         // justify-content: center;
+//         // width: 100%;
+//         // display: block;
+ 
+//     }
+    
+//     // .df_sidebar {
+//     //     justify-content: center;
+//     // }
+
+// }
+
 
 

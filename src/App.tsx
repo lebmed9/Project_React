@@ -1,10 +1,14 @@
 import React from 'react';
-import ViewCard from './components/pages/ViewCard';
 import MainContainer from './containers/MainContainer';
+import NotFoundContainer from './containers/NotFoundContainer';
+import ViewCardContainer from './containers/ViewCardContainer';
 
 const App = () => (
-  // <MainContainer />
-  <ViewCard />
+  <>
+    <MainContainer />
+    <ViewCardContainer />
+    <NotFoundContainer />
+  </>
 );
 
 export default App;
