@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import style from './Footer.module.scss';
 
 const Footer = () => (
   <div className={style.conteiner}>
     <footer className={style.footer}>
       <div className={style.item_1}>
-        <img src="/image/logo.png" alt="logo" />
+        <Link to="/">
+          <img src="/image/logo.png" alt="logo" />
+        </Link>
         <div className={style.border} />
         <span>Доска объявлений</span>
       </div>

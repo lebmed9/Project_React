@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ButtonHeader from '../Button/Header';
 import Input from '../Form/Header/Input';
 import style from './Header.module.scss';
 
 const Header = () => (
   <header className={style.header}>
-    <img src="/image/logo.png" alt="logo" />
+    <Link to="/">
+      <img src="/image/logo.png" alt="logo" />
+    </Link>
     <Input />
     <ButtonHeader />
     <div className={style.login}>

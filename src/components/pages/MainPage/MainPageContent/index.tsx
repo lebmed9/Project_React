@@ -5,8 +5,8 @@ import MainNav from './MainNav';
 import style from './MainPageContent.module.scss';
 
 type CardsPropsType = {
-  data: {
-    id: number;
+  cardsData: {
+    id: string;
     name: string;
     image: string;
     text: string;
@@ -16,14 +16,14 @@ type CardsPropsType = {
   }[];
 };
 
-const MainPageContent = ({ data }: CardsPropsType) => (
+const MainPageContent = ({ cardsData }: CardsPropsType) => (
   <div className={style.container}>
     <div className={style.content}>
       <div className={style.nav}>
         <MainNav />
       </div>
       <div className={style.cards}>
-        {data.map((el) => (
+        {cardsData.map((el) => (
           <Cards
             id={el.id}
             name={el.name}
