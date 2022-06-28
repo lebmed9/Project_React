@@ -1,0 +1,82 @@
+@import './../../../assets/style/vars.scss';
+
+.container {
+    margin: 0 auto;
+    margin-top: 41px;
+    max-width: 364px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: white;
+}
+
+.footer {
+    text-align: center;
+
+    & > h1 {
+        font-size: 18px;
+    }
+
+    & > p {
+        font-size: 14px;
+        color: $text-color-grey;
+    }
+}
+
+.df {
+    display: flex;
+    margin-top: 14px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.reg {
+    width: 50%;
+    text-align: center;
+    padding-bottom: 7px;
+    border-bottom: 2px solid $active-color-blue;
+
+
+    & > p {
+        color: $active-color-blue;
+    }
+}
+
+.auth {
+    width: 50%;
+    text-align: center;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $text-color-grey;
+}
+
+.auth p {
+    color: black;
+}
+
+.checkbox {
+    margin-left: 24px;
+    margin-bottom: 24px;
+}
+
+.checkbox__input {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 8px;
+}
+
+.checkbox__text {
+    max-width: 168px;
+    margin-left: 13px;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.agreement_text {
+    color: $active-color-blue;
+    font-size: 12px;
+    margin-left: 29px;
+}
+
+.agreement_text:hover {
+    border-bottom: 1px solid $active-color-blue;
+}

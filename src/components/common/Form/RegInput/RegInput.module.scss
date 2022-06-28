@@ -1,0 +1,39 @@
+@import './../../../../assets/style/vars.scss';
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.form input {
+    height: 48px;
+    width: calc(100% - (364px - 360px));
+    border: 1px solid $footer-color-grey;
+    background-color: $background;
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 16px;
+}
+
+
+
+.form input:hover {
+   border-bottom: 2px solid $active-color-blue;
+   outline: none;
+}
+
+.form input:focus {
+    border-bottom: 2px solid $active-color-blue;
+    outline: none;
+ }
+
+::-webkit-input-placeholder {
+    font-size: 12px;
+    margin-left: 5px;
+    color: $text-color-grey;
+    
+ }
