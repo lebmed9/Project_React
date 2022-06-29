@@ -7,6 +7,7 @@ export const cardsData = [
     price: '22 500 P',
     date: '14 апреля 2021',
     count: '356',
+    telefone: '+506 8756 4420',
   },
 
   {
@@ -17,6 +18,7 @@ export const cardsData = [
     price: '500 P',
     date: '14 апреля 2021',
     count: '356',
+    telefone: '+506 8756 4422',
   },
 
   {
@@ -27,6 +29,7 @@ export const cardsData = [
     price: '2 000 P',
     date: '14 апреля 2021',
     count: '356',
+    telefone: '+506 8756 4424',
   },
 
   {
@@ -37,6 +40,7 @@ export const cardsData = [
     price: '28 000 P',
     date: '14 апреля 2021',
     count: '356',
+    telefone: '+506 8756 4426',
   },
 
   {
@@ -47,6 +51,7 @@ export const cardsData = [
     price: '4 500 P',
     date: '14 апреля 2021',
     count: '356',
+    telefone: '+506 8756 4428',
   },
 
   {
@@ -57,6 +62,7 @@ export const cardsData = [
     price: '8 500 P',
     date: '14 апреля 2021',
     count: '356',
+    telefone: '+506 8756 4430',
   },
 
   {
@@ -67,6 +73,7 @@ export const cardsData = [
     price: '7 500 P',
     date: '14 апреля 2021',
     count: '356',
+    telefone: '+506 8756 4432',
   },
 
   {
@@ -77,6 +84,7 @@ export const cardsData = [
     price: '8 000 P',
     date: '14 апреля 2021',
     count: '356',
+    telefone: '+506 8756 4434',
   },
 
   {
@@ -87,6 +95,7 @@ export const cardsData = [
     price: '43 000 P',
     date: '14 апреля 2021',
     count: '356',
+    telefone: '+506 8756 4436',
   },
 ];
 
