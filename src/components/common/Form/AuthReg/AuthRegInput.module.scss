@@ -3,7 +3,6 @@
 .form {
     display: flex;
     flex-direction: column;
-    margin-top: 24px;
     margin-left: 24px;
     margin-right: 24px;
 }
@@ -27,7 +26,7 @@
     outline: none;
  }
 
-.form input:first-child {
+.form input {
     margin-bottom: 16px;
 }
 
@@ -37,3 +36,6 @@
     color: $text-color-grey;
     
  }
+
+
+

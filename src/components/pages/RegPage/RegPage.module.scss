@@ -27,6 +27,7 @@
     margin-top: 14px;
     font-size: 12px;
     font-weight: 700;
+    margin-bottom: 24px;
 }
 
 .reg {
@@ -80,3 +81,37 @@
 .agreement_text:hover {
     border-bottom: 1px solid $active-color-blue;
 }
+
+.button {
+    display: block;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: $active-color-blue;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    width: calc(100% - (364px - 316px));
+    height: 48px;
+    margin-left: 24px;
+  }
+
+  .error {
+    font-size: 12px;
+    margin-left: 24px;
+    margin-bottom: 12px;
+    margin-top: -12px;
+    color: red;
+  }
+
+  .form svg {
+    position: relative;
+    bottom: 32px;
+    left: 84%;
+  }
+
+ .form input {
+    margin-bottom: 0;
+ }
