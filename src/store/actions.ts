@@ -1,8 +1,13 @@
 export const CardActionsType = {
-  setCardName: 'SET_CARD_NAME',
+  setCardName: 'BurgerMenu',
 };
 
-export const SetCardAction = (name: string) => ({
+// export const SetCardAction = (name: string) => ({
+//   type: CardActionsType.setCardName,
+//   payload: name,
+// });
+
+export const SetCardAction = (burgerState: boolean) => ({
   type: CardActionsType.setCardName,
-  payload: name,
+  payload: burgerState,
 });

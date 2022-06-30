@@ -1,11 +1,9 @@
-import { CardActionsType } from './actions';
-
 export type ReducerType = {
-  name: string;
+  burgerState: boolean;
 };
 
 export type SetCardAction = {
   type: string;
-  payload: string;
+  payload: boolean;
 };
 export type ActionType = SetCardAction;

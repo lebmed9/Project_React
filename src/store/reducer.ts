@@ -2,7 +2,7 @@ import { CardActionsType } from './actions';
 import { ReducerType, ActionType } from './types';
 
 const initialState: ReducerType = {
-  name: '',
+  burgerState: false,
 };
 
 const reducer = (state = initialState, action: ActionType) => {
@@ -10,7 +10,7 @@ const reducer = (state = initialState, action: ActionType) => {
     case CardActionsType.setCardName:
       return {
         ...state,
-        name: action.payload,
+        burgerState: action.payload,
       };
 
     default:
