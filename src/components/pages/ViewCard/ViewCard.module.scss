@@ -15,7 +15,6 @@
 }
 
 .text {
-    // max-width: 772px;
 
     & > p {
         margin-top: 24px;
@@ -45,7 +44,6 @@
 .price {
     margin-top: 56px;
     margin-right: 180px;
-    // margin-left: calc(100% - (1200px - 580px));
 
     & > h1 {
         margin-bottom: 24px;
@@ -69,8 +67,6 @@
         margin-bottom: 10px;
       }
 
-    
-
     & > p {
         font-size: 18px;
         line-height: 24px;
@@ -78,10 +74,7 @@
     }  
 }
 
-
-
 .error {
-    // margin-bottom: -100px;
     text-align: center;
     color: $active-color-blue;
 }
@@ -91,7 +84,6 @@
 }
 
 .sidebar {
-    // margin-left: calc(100% - (1200px - 120px));
     margin-top: -43px;
     margin-left: 102px;
 
@@ -145,8 +137,6 @@
         justify-content: center;
         max-width: 766px;
         margin:0 auto;
-        // margin-left: 14px;
-        // margin-right: 14px;
     }
 
     .price {
@@ -173,8 +163,6 @@
         }
     }
 
-   
-
     .df_sidebar_mobile {
         display: flex;
         justify-content: space-between;
@@ -192,10 +180,7 @@
     .map img {
         max-width: 100%;
     }
-
 }
-
-
 
 @media only screen and (max-device-width: 768px){
     .text {
@@ -241,7 +226,6 @@
         width: 135px;
         height: 40px;
         margin-bottom: 10px;
-
     }
 
     .price_mobile h1 {
@@ -252,7 +236,6 @@
     }
 
     .df_sidebar_mobile {
-        // display: block;
         flex-direction: column;
         align-items: center;
 
@@ -267,38 +250,3 @@
         }
     }
 } 
-
-
-
-
-
-// @media only screen and (max-device-width: 785px){
-
-//     .price {
-//         margin-left: 180px;
-//     }
-
-//     .sidebar {
-//         display: none;
-//     }
-
-//     .content {
-//         // align-items: center;
-//         // margin: auto;
-//     }
-
-//     .df {
-//         // justify-content: center;
-//         // width: 100%;
-//         // display: block;
- 
-//     }
-    
-//     // .df_sidebar {
-//     //     justify-content: center;
-//     // }
-
-// }
-
-
-

@@ -81,7 +81,9 @@ const AuthPage = () => {
           <span>Пароль должден быть больше 10 символов</span>
         </div>
       )}
-      <p className={style.p}>Забыли пароль?</p>
+      <Link to="*">
+        <p className={style.p}>Забыли пароль?</p>
+      </Link>
       <button className={style.button} type="button" onClick={submitHandler}>
         Войти
       </button>

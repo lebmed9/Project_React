@@ -30,7 +30,6 @@
         font-size: 24px;
     }
 
-
     .nav_list {
         display: block;
         list-style: none;
@@ -43,11 +42,8 @@
     .cards {
         justify-items: center;
         gap: 24px;
-        // grid-template-columns: 1px;
         column-gap: 0;
-
         grid-template-columns: 1fr 1fr;
-        // width: 100%;
     }
 }
 

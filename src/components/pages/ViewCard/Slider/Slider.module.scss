@@ -1,6 +1,5 @@
 @import '../../../../assets/style/vars.scss';
 
-
 .preview {
   display: flex;
   justify-content: space-between;
@@ -18,7 +17,6 @@
     border: 3px solid $header-button-color;
 }
 
-
 @media only screen and (max-device-width: 1200px){
   .preview {
     padding-top: 24px;
@@ -26,21 +24,15 @@
     margin-bottom: 32px;
     max-width: 100%;
     height: auto;
-
-
     margin-bottom: 32px;
   
       & > img {
           width: 23%;
           height: auto;
-          // height: 96px;
       }
   }
     .slider img {
-      // max-width: 718px;
       max-width: 100%;
-      // height: auto;
-
     }
   } 
 

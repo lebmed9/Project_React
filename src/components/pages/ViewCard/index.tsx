@@ -54,7 +54,6 @@ const ViewCard = ({ cardItem, sliderImg, cardsData }: CardsPropsType) => {
               />
             </svg>
           </Link>
-
           <p>{cardItem?.date}</p>
           <h1>{cardItem?.name}</h1>
           <p>{cardItem?.id}</p>
@@ -96,7 +95,6 @@ const ViewCard = ({ cardItem, sliderImg, cardsData }: CardsPropsType) => {
           )}
         </div>
       </div>
-
       <div className={style.df_sidebar}>
         <Slider sliderImg={sliderImg} />
         <div className={style.price_mobile}>

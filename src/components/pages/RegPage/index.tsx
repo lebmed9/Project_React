@@ -57,7 +57,6 @@ const RegPage = () => {
         </div>
       </div>
       <Input placeholder="Имя" value={name} setValue={setName} type="text" />
-
       <Input placeholder="Фамилия" value={surname} setValue={setSurname} type="text" />
       <Input placeholder="Email" value={email} setValue={setEmail} type="text" />
       <form className={style.form}>

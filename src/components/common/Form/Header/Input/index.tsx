@@ -25,7 +25,6 @@ const Input = () => (
         strokeLinejoin="round"
       />
     </svg>
-
     <input type="seach" className={style.header_input} />
     <button className={style.button} type="submit">
       Искать
