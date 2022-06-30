@@ -14,13 +14,23 @@ type CardsPropsType = {
     count: string;
     telefone: string;
   };
+  cardsData: {
+    id: string;
+    image: string;
+    name: string;
+    text: string;
+    price: string;
+    date: string;
+    count: string;
+    telefone: string;
+  }[];
   sliderImg: {
     id: number;
     value: string;
   }[];
 };
 
-const ViewCard = ({ cardItem, sliderImg }: CardsPropsType) => {
+const ViewCard = ({ cardItem, sliderImg, cardsData }: CardsPropsType) => {
   const [number, setNumber] = useState(false);
 
   const changeType = () => {
@@ -106,8 +116,14 @@ const ViewCard = ({ cardItem, sliderImg }: CardsPropsType) => {
         </div>
         <div className={style.sidebar}>
           <p>Смотрите также:</p>
-          <img src="/image/cards-main/img_1/img1.png" alt="sb1" />
-          <img src="/image/cards-main/img_1/img1.png" alt="sb2" />
+          <div>
+            <img src={cardsData[5]?.image} alt="sb1" />
+            <p>{cardsData[5]?.name}</p>
+          </div>
+          <div>
+            <img src={cardsData[7]?.image} alt="sb1" />
+            <p>{cardsData[7]?.name}</p>
+          </div>
         </div>
       </div>
       <div className={style.description}>
@@ -125,9 +141,9 @@ const ViewCard = ({ cardItem, sliderImg }: CardsPropsType) => {
       <div className={style.sidebar_mobile}>
         <p>Смотрите также:</p>
         <div className={style.df_sidebar_mobile}>
-          <img src="/image/cards-main/img_1/img1.png" alt="sb1" />
-          <img src="/image/cards-main/img_1/img1.png" alt="sb2" />
-          <img src="/image/cards-main/img_1/img1.png" alt="sb3" />
+          <img src={cardsData[5]?.image} alt="sb1" />
+          <img src={cardsData[7]?.image} alt="sb2" />
+          <img src={cardsData[4]?.image} alt="sb2" />
         </div>
       </div>
     </div>

@@ -95,15 +95,19 @@
     margin-top: -43px;
     margin-left: 102px;
 
-    & > img {
-        max-width: 303px;
-        height: 190px;
-        margin-bottom: 100px;
-    }
-
     & > p {
         margin-bottom: 24px;
     }
+}
+
+.sidebar img {
+    max-width: 303px;
+    height: 190px;
+    margin-bottom: 5px;
+}
+
+.sidebar div:nth-child(2) {
+    margin-bottom: 36px;
 }
 
 .sidebar_mobile {
@@ -169,6 +173,8 @@
         }
     }
 
+   
+
     .df_sidebar_mobile {
         display: flex;
         justify-content: space-between;
@@ -188,6 +194,8 @@
     }
 
 }
+
+
 
 @media only screen and (max-device-width: 768px){
     .text {

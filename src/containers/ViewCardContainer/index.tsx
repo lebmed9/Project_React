@@ -9,7 +9,7 @@ const ViewCardContainer = () => {
   const sliderItem = cardsDataView.find((el) => el.id === id)!;
   const sliderImg = sliderItem?.slider;
 
-  return <ViewCard cardItem={card} sliderImg={sliderImg} />;
+  return <ViewCard cardItem={card} sliderImg={sliderImg} cardsData={cardsData} />;
 };
 
 export default ViewCardContainer;
