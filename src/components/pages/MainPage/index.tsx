@@ -1,9 +1,20 @@
 import React from 'react';
-import { cardsData } from '../../../helpers';
 import Banner from './Banner';
 import MainPageContent from './MainPageContent';
 
-const MainPage = () => (
+type CardsPropsType = {
+  cardsData: {
+    id: string;
+    name: string;
+    image: string;
+    text: string;
+    price: string;
+    date: string;
+    count: string;
+  }[];
+};
+
+const MainPage = ({ cardsData }: CardsPropsType) => (
   <>
     <Banner />
     <MainPageContent cardsData={cardsData} />
