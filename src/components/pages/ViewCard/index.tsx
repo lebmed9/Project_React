@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import style from './ViewCard.module.scss';
 import Slider from './Slider';
+import MainNav from '../MainPage/MainPageContent/MainNav';
 
 type CardsPropsType = {
   cardItem: {
@@ -82,6 +83,9 @@ const ViewCard = ({ cardItem, sliderImg, cardsData }: CardsPropsType) => {
             </svg>
             <p>{cardItem?.count}</p>
           </div>
+        </div>
+        <div className={style.nav_list}>
+          <MainNav />
         </div>
         <div className={style.price}>
           <h1>{cardItem?.price}</h1>

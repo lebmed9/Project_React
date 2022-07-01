@@ -25,6 +25,25 @@
     }
 }
 
+.nav_list {
+    display: none;
+}
+
+@media only screen and (max-device-width: 1200px){
+    .nav_list {
+        display: block;
+        position: absolute;
+        color: #000;
+        top: 72px;
+        left: calc(100% - (1200px - 978px));
+        padding: 14px;
+        padding-right: 24px;
+        background-color: $background;
+        font-size: 24px;
+      }
+}
+
+
 
 @media only screen and (max-device-width: 768px){
 
@@ -37,6 +56,10 @@
             margin: 0 auto; 
         }
     }
+
+    .nav_list {
+        left: 0;
+      }
 
     .text {
         margin-top: 40px;

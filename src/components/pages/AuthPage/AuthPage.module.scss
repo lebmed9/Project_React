@@ -37,6 +37,10 @@
     border-bottom: 1px solid $text-color-grey;
 }
 
+.nav_list {
+    display: none;
+}
+
 .reg p {
     color: black;
 }
@@ -97,4 +101,26 @@
  .form input {
     margin-bottom: 0;
  }
+
+
+ @media only screen and (max-device-width: 1200px){
+    .nav_list {
+        display: block;
+        position: absolute;
+        top: 72px;
+        left: calc(100% - (1200px - 978px));
+        padding: 14px;
+        padding-right: 24px;
+        background-color: $background;
+        font-size: 24px;
+    
+      }
+ }
+
+ @media only screen and (max-device-width: 768px){
+    .nav_list {
+        left: 0;
+      }
+ }
+
 

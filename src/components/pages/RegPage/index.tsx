@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Input from '../../common/Form/AuthReg';
+import MainNav from '../MainPage/MainPageContent/MainNav';
 import style from './RegPage.module.scss';
 
 const RegPage = () => {
@@ -136,6 +137,9 @@ const RegPage = () => {
           <Link to="*" className={style.agreement_text}>
             Пользовательского соглашения
           </Link>
+          <div className={style.nav_list}>
+            <MainNav />
+          </div>
         </div>
       </div>
       <button className={style.button} type="button" onClick={submitHandler}>

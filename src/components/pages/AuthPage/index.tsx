@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Input from '../../common/Form/AuthReg';
+import MainNav from '../MainPage/MainPageContent/MainNav';
 import style from './AuthPage.module.scss';
 
 const AuthPage = () => {
@@ -47,6 +48,9 @@ const AuthPage = () => {
       </div>
       <Input placeholder="Email" value={email} setValue={setEmail} type="text" />
       <form className={style.form}>
+        <div className={style.nav_list}>
+          <MainNav />
+        </div>
         <Input
           placeholder="Пароль"
           value={password}

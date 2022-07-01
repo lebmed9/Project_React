@@ -131,6 +131,10 @@
     }
 }
 
+.nav_list {
+    display: none;
+}
+
 @media only screen and (max-device-width: 1200px){
 
     .content {
@@ -141,11 +145,28 @@
 
     .price {
         margin-right: 0;
+
+
+        & > button {
+            font-size: 12px;
+        }
     }
 
     .sidebar {
         display: none;
     }
+
+    .nav_list {
+        display: block;
+        position: absolute;
+        color: #000;
+        top: 72px;
+        left: calc(100% - (1200px - 978px));
+        padding: 14px;
+        padding-right: 24px;
+        background-color: $background;
+        font-size: 24px;
+      }
 
     .df_sidebar {
         display: block;
@@ -180,6 +201,8 @@
     .map img {
         max-width: 100%;
     }
+
+    
 }
 
 @media only screen and (max-device-width: 768px){
@@ -199,6 +222,10 @@
     .price {
         display: none;
     }
+
+    .nav_list {
+        left: 0;
+      }
 
     .price_mobile {
         display: flex;

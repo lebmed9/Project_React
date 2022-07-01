@@ -1,26 +1,4 @@
 @import '../../../assets/style/vars.scss';
-// .header {
-//   grid-area: header;
-//   background-color: $sub-color;
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-evenly;
-//   width: 100%;
-//   & > ul {
-//     width: 400px;
-//     display: flex;
-//     list-style: none;
-//     align-items: center;
-//     justify-content: space-between;
-//   }
-// }
-
-// .active_link {
-//   color: green;
-// }
-// .not_active_link {
-//   color: red;
-// }
 
 .header {
   display: flex;
@@ -42,6 +20,8 @@
   font-size: 14px;
   color: black;
 }
+
+
 
 .burgerBtn {
   width: 18px;
@@ -103,6 +83,8 @@
     padding-right: 24px;
     padding-left: 24px;
   }
+
+
   }
 
   @media only screen and (max-device-width: 768px){
